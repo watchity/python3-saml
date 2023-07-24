@@ -10,6 +10,7 @@
         "wantNameId" : true,
         "wantNameIdEncrypted": false,
         "wantAssertionsEncrypted": false,
+        "wantAttributeStatement": false,
         "allowSingleLabelDomains": false,
         "signatureAlgorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
         "digestAlgorithm": "http://www.w3.org/2001/04/xmlenc#sha256",
@@ -27,9 +28,9 @@
     },
     "organization": {
         "en-US": {
-            "name": "sp_test",
-            "displayname": "SP test",
-            "url": "http://sp.example.com"
+            "name": "sp_test_onelogin",
+            "displayname": "SP test onelogin",
+            "url": "http://sp.onelogin-example.com"
         }
     }
 }

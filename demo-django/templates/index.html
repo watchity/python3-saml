@@ -44,9 +44,11 @@
   {% else %}
     <div class="alert alert-danger" role="alert">You don't have any attributes</div>
   {% endif %}
-  <a href="{% url "index" %}?slo" class="btn btn-danger">Logout</a>
+  <a href="{% url 'slo' provider='okta' %}" class="btn btn-danger">Logout (okta)</a>
+  <a href="{% url 'slo' provider='onelogin' %}" class="btn btn-danger">Logout (onelogin)</a>
 {% else %}
-  <a href="{% url "index" %}?sso" class="btn btn-primary">Login</a> <a href="{% url "index" %}?sso2" class="btn btn-info">Login and access to attrs page</a>
+  <a href="{% url 'sso' provider='okta' %}" class="btn btn-primary">Login (okta)</a>
+  <a href="{% url 'sso' provider='onelogin' %}" class="btn btn-primary">Login (onelogin)</a>
 {% endif %}
 
 {% endblock %}
